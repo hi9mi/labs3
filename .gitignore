@@ -1,0 +1,12 @@
+**/bin/
+**/obj/
+*.pdb
+**/out/
+**/target/
+*.class
+**/build/
+*.o
+*.exe
+.vscode/
+
+**/lab*/**/*.txt
