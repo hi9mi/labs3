@@ -1,6 +1,6 @@
 # Labs
 
-Лабораторные работы выполняются в **Visual Studio Code** под **WSL (Ubuntu)**.
+Лабораторные работы выполнялись в **Visual Studio Code** под **WSL (Ubuntu)**.
 
 ## Быстрый старт
 
@@ -18,7 +18,7 @@ sudo apt install -y openjdk-21-jdk
 ```bash
 ms-vscode.cpptools-extension-pack
 vscjava.vscode-java-pack
-ms-dotnettools.csdevki
+ms-dotnettools.csdevkit
 ```
 
 После установки можно создавать и запускать лабораторные через `make`:
