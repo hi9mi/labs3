@@ -1,12 +1,14 @@
+import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 public class Main {
+
   static boolean isPalindrome(String s) {
     return s.equals(new StringBuilder(s).reverse().toString());
   }
 
   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in, StandardCharsets.UTF_8);
 
     while (true) {
       System.out.print("Введите четырёхзначное число (или ноль для выхода): ");
@@ -21,7 +23,11 @@ public class Main {
         continue;
       }
 
-      System.out.println(isPalindrome(s) ? "Число является палиндромом" : "Число не является палиндромом");
+      System.out.println(
+        isPalindrome(s)
+          ? "Число является палиндромом"
+          : "Число не является палиндромом"
+      );
     }
     scanner.close();
   }

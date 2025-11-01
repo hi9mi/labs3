@@ -16,7 +16,7 @@ private:
 public:
     Product() = default;
     Product(string n, double p, string m)
-        : name(move(n)), price_rub(p), manufacturer(move(m)) {}
+        : name(std::move(n)), price_rub(p), manufacturer(std::move(m)) {}
 
     void input()
     {

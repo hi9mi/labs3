@@ -12,7 +12,7 @@ private:
 public:
     Product() : name(""), price_rub(0.0), manufacturer("") {}
 
-    Product(string n, double p, string m) : name(move(n)), price_rub(p), manufacturer(move(m)) {}
+    Product(string n, double p, string m) : name(std::move(n)), price_rub(p), manufacturer(std::move(m)) {}
 
     void input()
     {

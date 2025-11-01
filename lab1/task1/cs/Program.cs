@@ -1,4 +1,4 @@
-﻿class Program
+class Program
 {
     static bool IsPalindrome(string s) => s == new string([.. s.Reverse()]);
     static void Main()
