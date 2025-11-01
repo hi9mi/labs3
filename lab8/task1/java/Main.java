@@ -74,7 +74,7 @@ public class Main {
         found = true;
       }
     }
-    if (!found) System.out.println("Не найдено.");
+    if (!found) System.out.println("Не найдено");
 
     productList.sort(Comparator.comparing(Product::getCreationDate));
     System.out.println("\n=== Отсортировано по дате создания ===");

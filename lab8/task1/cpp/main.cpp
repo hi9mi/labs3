@@ -192,10 +192,12 @@ int main()
     }
 
     cout << "\n=== Список товаров ===\n";
+    cout << fixed << setprecision(0);
+
     for (auto &p : product_list)
     {
         p.output();
-        cout << "Цена в долларах: " << p.to_usd() << endl;
+        cout << "Цена в долларах: " << p.to_usd() << '\n';
         p.increase_if_toyota();
         cout << "После проверки: ";
         p.output();

@@ -43,7 +43,7 @@ class Program
             }
         }
         if (!found)
-            Console.WriteLine("Не найдено.");
+            Console.WriteLine("Не найдено");
 
         productList.Sort((a, b) => a.CreationDate.CompareTo(b.CreationDate));
 

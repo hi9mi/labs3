@@ -1,4 +1,4 @@
-﻿using System.Globalization;
+using System.Globalization;
 using System.Text;
 
 class Program
@@ -157,4 +157,3 @@ class Product
         manufacturer = parts[2].Trim();
     }
 }
-

@@ -14,7 +14,7 @@ private:
     string manufacturer;
 
 public:
-    Product() = default;
+    Product(): name(""), price_rub(0), manufacturer("") {}
     Product(string n, double p, string m)
         : name(std::move(n)), price_rub(p), manufacturer(std::move(m)) {}
 
@@ -130,7 +130,7 @@ int main()
         }
 
         {
-            ofstream out("products.txt");
+            ofstream out("products.txt", ios::binary);
             if (!out.is_open())
                 throw runtime_error("Не удалось открыть файл для записи");
 
@@ -142,7 +142,7 @@ int main()
 
         vector<Product> loaded_products;
         {
-            ifstream in("products.txt");
+            ifstream in("products.txt", ios::binary);
             if (!in.is_open())
                 throw runtime_error("Не удалось открыть файл для чтения");
 
